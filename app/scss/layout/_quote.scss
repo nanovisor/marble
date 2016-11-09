@@ -1,0 +1,25 @@
+.quote {
+  padding-top: 54px;
+  padding-bottom: 60px;
+  background-color: #efefef;
+  text-align: center;
+
+  &__symbol-icon {
+    display: inline-block;
+    width: 41px;
+    height: 32px;
+    margin-bottom: 28px;
+    font-size: 60px;
+    background: url("../img/spritesheet-v4.png") no-repeat;
+    background-position: -8px -178px;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-family-roboto-slab;
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+    line-height: 30px;
+    color: #a1a1a1;
+  }
+}

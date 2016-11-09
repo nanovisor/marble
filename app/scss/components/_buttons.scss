@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px 26px;
+  font-family: $font-family-roboto-condensed;
+  font-size: 14px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #3f8dbf;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: #3678a3 0 4px;
+
+  &:hover {
+    background-color: darken(#3f8dbf, 10%);
+    box-shadow: darken(#3678a3, 10%) 0 4px;
+  }
+
+  &--hero {
+    margin-bottom: 198px;
+  }
+}

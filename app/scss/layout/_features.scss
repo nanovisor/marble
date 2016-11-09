@@ -1,0 +1,114 @@
+.features {
+  text-align: center;
+
+  &__list {
+    padding-bottom: 57px;
+    font-size: 0;
+    border-bottom: 2px solid #dcdcdc;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.764705882352941%; // 21px/1190px
+    width: 21.00840336134454%; // 250px/1190px
+    vertical-align: top;
+    text-align: center;
+    font-size: 14px;
+
+    &:hover .features__logo {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5 );
+    }
+
+    @media (max-width: 900px) {
+      width: 46%;
+    }
+
+    @media (max-width: 500px) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  // Круги
+  &__logo {
+    @include size (90px);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -45px;
+    border-radius: 100px;
+    background-color: #66a3c6;
+    transition: .2s;
+
+    &--lamp {
+      background-color: #9d9abf;
+    }
+
+    &--clock {
+      background-color: #d2514b;
+    }
+
+    &--potion {
+      background-color: #66a3c6;
+    }
+
+    &--brick {
+      background-color: #e8c04f;
+    }
+  }
+
+  //Спрайт с иконками
+  &__logo-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27%;
+    background: url("../img/spritesheet-v4.png") no-repeat;
+
+    &--lamp {
+      width: 29px;
+      height: 44px;
+      background-position: -9px -82px;
+    }
+
+    &--clock {
+      width: 30px;
+      height: 33px;
+      margin-top: 32%;
+      background-position: -9px -41px;
+    }
+
+    &--potion {
+      width: 38px;
+      height: 41px;
+      background-position: -9px -132px;
+    }
+
+    &--brick {
+      width: 39px;
+      height: 23px;
+      margin-top: 37%;
+      background-position: -9px -9px;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    margin-top: 158px;
+    font-family: $font-family-roboto-slab;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 60px;
+    color: #4e4e4e;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-family-roboto;
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+  }
+}

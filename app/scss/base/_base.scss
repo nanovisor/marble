@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-regular;
+  font-size: 14px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+
+  &--clearfix {
+    @include clearfix;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
