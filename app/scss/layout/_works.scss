@@ -17,8 +17,8 @@
   &__item {
     display: inline-block;
     vertical-align: top;
-    width: 31.9327731092437%; // 380px/1190px
-    margin-right: 1.260504201680672%; // 15px/1190px
+    width: 31.93277%; // 380px/1190px
+    margin-right: 1.26050%; // 15px/1190px
 
     &:last-child {
       margin-right: 0;
@@ -50,6 +50,7 @@
 
   &__img {
     margin-bottom: 10px;
+    transition: .2s ease-out;
   }
 
   &__item-heading {

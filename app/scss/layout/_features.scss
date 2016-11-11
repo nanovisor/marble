@@ -10,8 +10,8 @@
   &__item {
     position: relative;
     display: inline-block;
-    margin: 0 1.764705882352941%; // 21px/1190px
-    width: 21.00840336134454%; // 250px/1190px
+    margin: 0 1.76470%; // 21px/1190px
+    width: 21.00840%; // 250px/1190px
     vertical-align: top;
     text-align: center;
     font-size: 14px;
@@ -39,7 +39,7 @@
     margin-left: -45px;
     border-radius: 100px;
     background-color: #66a3c6;
-    transition: .2s;
+    transition: .2s ease-out;
 
     &--lamp {
       background-color: #9d9abf;

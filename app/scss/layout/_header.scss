@@ -5,13 +5,12 @@
 .logo {
   position: relative;
   float: left;
-  width: 31.9327731092437%; // 380px/1190px
+  width: 31.93277%; // 380px/1190px
   padding: 35px 0;
 
   @media (max-width: 750px) {
     float: none;
     width: auto;
-    padding-left: 20px;
   }
 
   &__link {
@@ -45,7 +44,7 @@
   width: 65%;
   padding: 49px 0;
 
-  @media (max-width: 750px) {
+  @media (max-width: 750px) {/////////////////work jquery
     position: absolute;
     top: 85px;
     left: 0;
@@ -61,15 +60,13 @@
     z-index: -100;
 
     background: #e5e5e5 url("../img/header-bg.jpg");
-    transition-property: top;
-    transition-duration: .4s;
-    transition-timing-function: ease-out;
+    transition: top .4s ease;
   }
 
   // JS STYLE mobile-menu.js
   &--show-menu {
-    @media (max-width: 750px) {
-      position: absolute;
+    @media (max-width: 750px) {/////////////////work jquery
+      // position: absolute;
       top: 135px;
       z-index: 100;
     }
@@ -109,6 +106,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #4e4e4e;
+    transition: color .2s ease-out;
 
     &:hover {
       color: #1abb9c

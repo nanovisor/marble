@@ -5,7 +5,7 @@
 
   &__item {
     float: left;
-    width: 21.84873949579832%; // 260px/1190px
+    width: 21.84873%; // 260px/1190px
     margin-right: 4.2%;
 
     &:last-child {
@@ -85,7 +85,7 @@
     line-height: 24px;
 
     // phone and email
-    > a {
+    a {
       color: #cacaca;
     }
 
@@ -178,7 +178,7 @@
     margin-bottom: 19px;
 
     // post-style
-    > p {
+    p {
       margin: 0;
       margin-bottom: 3px;
       font-family: $font-family-roboto;
@@ -188,7 +188,7 @@
     }
 
     // post date
-    > time {
+    time {
       font-family: $font-family-roboto-slab;
       font-weight: $font-weight-regular;
       font-size: 12px;
