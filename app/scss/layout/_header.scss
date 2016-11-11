@@ -44,31 +44,34 @@
   width: 65%;
   padding: 49px 0;
 
-  @media (max-width: 750px) {/////////////////work jquery
+  @media (max-width: 750px) {
     position: absolute;
-    top: 85px;
+    top: 135px;
     left: 0;
     right: 0;
 
     float: none;
-    display: block;
     width: 100%;
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    z-index: -100;
 
     background: #e5e5e5 url("../img/header-bg.jpg");
-    transition: top .4s ease;
+
+    transition: transform .3s ease-out,
+                opacity .3s ease-out;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
   }
 
   // JS STYLE mobile-menu.js
   &--show-menu {
-    @media (max-width: 750px) {/////////////////work jquery
-      // position: absolute;
-      top: 135px;
-      z-index: 100;
+
+    @media (max-width: 750px) {
+      transform: scaleY(1);
+      opacity: 1;
     }
   }
 
